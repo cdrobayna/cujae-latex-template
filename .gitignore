@@ -1,3 +1,6 @@
+## Custom
+src/*.pdf
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
