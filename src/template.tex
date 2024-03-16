@@ -1,0 +1,34 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[]{fontspec}
+\usepackage[]{setspace}
+\usepackage[spanish]{babel}
+\usepackage[]{xparse}
+
+\usepackage[]{graphicx}
+\usepackage[]{placeins}
+
+\setmainfont{Arial}
+\onehalfspacing
+
+\newcommand{\presentation}[3]{
+	\begin{titlepage}
+		\begin{center}
+			{\scshape\large Universidad Tecnológica de la Habana} \\
+			{\scshape\large ``José Antonio Echeverría''} \\
+			\vspace{0.5cm}
+			\includegraphics[width=0.15\textwidth]{../public/cujae.png} \\
+			\vspace{0.5cm}
+			{\scshape\large Facultad de Ingeniería Informática} \\
+			\vspace{2cm}
+			{\huge\bfseries #1}
+			\vfill
+			{\large\bfseries Autor:} \\
+			{\large #2} \\
+			\vspace{1cm}
+			{\large\bfseries Tutor:} \\
+			{\large #3} \\
+			\vfill
+			{\large \today}
+		\end{center}
+	\end{titlepage}
+}
